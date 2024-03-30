@@ -27,7 +27,8 @@ jobs:
     - name: Install dependencies
       run: |
         pip install poetry
-        poetry install --with=dev
+        poetry env remove --all
+        poetry install
         
         # python -m pip install --upgrade pip
         # python -m pip install flake8 pytest
