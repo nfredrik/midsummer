@@ -31,7 +31,8 @@ jobs:
     - name: Install dependencies
       run: |
         poetry --version
-        poetry install
+        poetry cache clear --all
+        poetry install --verbose
         
     - name: Lint with flake8
       run: |
