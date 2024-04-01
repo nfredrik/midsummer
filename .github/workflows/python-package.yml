@@ -30,7 +30,8 @@ jobs:
         echo "$HOME/.poetry/bin" >> $GITHUB_PATH        echo "$HOME/.poetry/bin" >> $GITHUB_PATH
     - name: Install dependencies
       run: |
-        poetry install --no-root
+        poetry --version
+        poetry install
         
     - name: Lint with flake8
       run: |
