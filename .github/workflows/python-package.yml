@@ -24,11 +24,13 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
-    - name: Install Poetry
-      run: |
-        curl -sSL https://install.python-poetry.org | python -
-        echo "$HOME/.poetry/bin" >> $GITHUB_PATH        echo "$HOME/.poetry/bin" >> $GITHUB_PATH
-        source $HOME/.poetry/env
+    - name: Setup Poetry
+      uses: pronovic/setup-poetry@v2
+      with:
+        version: "1.8.0"
+        plugins: "poetry-dynamic-versioning==1.2.0"
+        cache-venv: "true"
+        cache-poetry: "true"
     - name: Install dependencies
       run: |
         poetry --version
