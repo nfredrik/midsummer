@@ -24,6 +24,7 @@ poethepoet = "^0.24.4"
 flake8-pyproject = "^1.2.3"
 pytest = "^8.1.1"
 assertpy = "^1.1"
+pytest-html = "^4.1.1"
 
 
 [tool.black]
@@ -58,7 +59,7 @@ exclude = [
 ]
 
 [tool.poe.tasks]
-test = "pytest"
+test = "pytest --html=report.html"
 format = "black ."
 format-check = "black --check ."
 lint = "flake8 ."
