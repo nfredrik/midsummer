@@ -54,3 +54,9 @@ jobs:
       with:
         name: html-report
         path: report.html   
+
+    - name: HTML Preview
+      id: html_preview
+      uses: pavi2410/html-preview-action@v2
+      with:
+        html_file: 'report.html'    
