@@ -7,12 +7,10 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-assertpy = "^1.1"
-pytest = "^8.1.1"
 
 [[tool.poetry.source]]
 name = "midsummer"
-url =  "https://pypi.org/simple"
+url = "https://pypi.org/simple"
 priority = "primary"
 
 [tool.pyright]
@@ -24,7 +22,8 @@ pre-commit = "^3.6.0"
 flake8 = "^6.1.0"
 poethepoet = "^0.24.4"
 flake8-pyproject = "^1.2.3"
-pytest = "^8.0"
+pytest = "^8.1.1"
+assertpy = "^1.1"
 
 
 [tool.black]
@@ -32,15 +31,16 @@ line-length = 79
 include = '\.pyi?$'
 exclude = '''
 /(
-    \.git
-  | \.hg
-  | \.mypy_cache
-  | \.tox
-  | \.venv
-  | _build
-  | buck-out
-  | build
-  | dist
+    |\.git
+    |\.hg
+    |\.mypy_cache
+    |\.tox
+    |\.venv
+    |_build
+    |buck-out
+    |build
+    |dist
+    |third_party_libs/
 )/
 '''
 
