@@ -34,6 +34,7 @@ jobs:
         cache-suffix: "000"
     - name: Install dependencies
       run: |
+        poetry config --list
         poetry install -vvv --only=dev,main  --no-cache 
     - name: Lint with flake8
       run: |
