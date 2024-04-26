@@ -12,11 +12,8 @@ pytest = "^8.1.1"
 
 [[tool.poetry.source]]
 name = "midsummer"
-url = "https://github.com/nfredrik/midsummer.git"
+url =  "https://pypi.org/simple"
 priority = "primary"
-
-
-
 
 [tool.pyright]
 reportGeneralTypeIssues = false
