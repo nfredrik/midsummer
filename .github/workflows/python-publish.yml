@@ -22,4 +22,4 @@ jobs:
       - name: Build package with Poetry
         run: poetry build
       - name: Publish package to PyPI with Poetry
-        run: poetry publish --username __token__ --password ${{ secrets.PYPI_API_TOKEN }}
+        run: poetry publish --username Fredrik.Svrd --password ${{ secrets.PYPI_API_TOKEN }}
