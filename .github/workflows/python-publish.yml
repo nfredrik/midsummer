@@ -25,7 +25,13 @@ jobs:
           poetry install
       - name: Build package with Poetry
         run: poetry build
-      - run: poetry publish
+
+      - name: Push package with Poetry
         env:
             POETRY_HTTP_BASIC_PYPI_USERNAME: 'Fredrik.Svrd'
             POETRY_HTTP_BASIC_PYPI_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+        run: |
+          echo "Authenticating with service using provided credentials..."
+          peotry publish --username $POETRY_HTTP_BASIC_PYPI_USERNAME --password $POETRY_HTTP_BASIC_PYPI_PASSWORD
+
+        
