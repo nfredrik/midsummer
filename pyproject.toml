@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "midsummer"
 version = "0.1.0"
-description = ""
+description = "Midsummer Date"
 authors = ["fredrik <nfredrik@hotmail.com>"]
 readme = "README.md"
 
