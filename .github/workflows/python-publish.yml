@@ -32,6 +32,6 @@ jobs:
             POETRY_HTTP_BASIC_PYPI_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
         run: |
           echo "Authenticating with service using provided credentials..."
-          peotry publish --username $POETRY_HTTP_BASIC_PYPI_USERNAME --password $POETRY_HTTP_BASIC_PYPI_PASSWORD
+          poetry publish --username $POETRY_HTTP_BASIC_PYPI_USERNAME --password $POETRY_HTTP_BASIC_PYPI_PASSWORD
 
         
