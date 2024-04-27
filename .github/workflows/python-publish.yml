@@ -32,6 +32,7 @@ jobs:
             PASSWORD: ${{ secrets.PYPI_TOKEN }}
         run: |
           echo "Authenticating with service using provided credentials... $USERNAME"
-          poetry publish --username $USERNAME --password $PASSWORD
+          poetry config pypi-token.pypi $PASSWORD
+          poetry publish 
 
         
