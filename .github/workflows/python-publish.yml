@@ -27,4 +27,4 @@ jobs:
         run: poetry build
       - run: poetry publish --username 'Fredrik.Svrd'
         env:
-            POETRY_HTTP_BASIC_MIDUMMER_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+            POETRY_HTTP_BASIC_PYPI_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
