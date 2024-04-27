@@ -27,10 +27,5 @@ The midsummer_date function calculates the date of Midsummer’s Day for the spe
 MidsummerException: Raised if the input year is not an integer or if the date falls outside the expected range.
 ValueError: Raised if the calculated Midsummer’s Day does not fall on a Friday, as per tradition.
 
-## Constants
-FIRST_POSSIBLE_DAY: The earliest possible day in June that Midsummer’s Day can fall on.
-MIDSUMMER_MONTH: The month of June.
-DAYS_IN_A_WEEK_ZERO_CNT: The number of days to check from the first possible day to find a Friday.
-
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
