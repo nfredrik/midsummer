@@ -25,6 +25,7 @@ jobs:
           poetry install
       - name: Build package with Poetry
         run: poetry build
-      - run: poetry publish --username 'Fredrik.Svrd'
+      - run: poetry publish
         env:
+            POETRY_HTTP_BASIC_PYPI_USERNAME: 'Fredrik.Svrd'
             POETRY_HTTP_BASIC_PYPI_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
