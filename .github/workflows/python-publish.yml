@@ -28,10 +28,10 @@ jobs:
 
       - name: Push package with Poetry
         env:
-            POETRY_HTTP_BASIC_PYPI_USERNAME: 'Fredrik.Svrd'
-            POETRY_HTTP_BASIC_PYPI_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+            USERNAME: 'Fredrik.Svrd'
+            PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
         run: |
-          echo "Authenticating with service using provided credentials..."
-          poetry publish --username $POETRY_HTTP_BASIC_PYPI_USERNAME --password $POETRY_HTTP_BASIC_PYPI_PASSWORD
+          echo "Authenticating with service using provided credentials... $USERNAME"
+          poetry publish --username $USERNAME --password $PASSWORD
 
         
