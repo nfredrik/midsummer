@@ -1,5 +1,6 @@
 [![pypi](https://img.shields.io/pypi/v/midsummer.svg)](https://pypi.python.org/pypi/midsummer)
-[![downloads](https://static.pepy.tech/badge/pydantic/month)](https://pepy.tech/project/midsummer)
+[![Downloads](https://static.pepy.tech/badge/midsummer)](https://pepy.tech/project/midsummer) 
+[![Downloads](https://static.pepy.tech/badge/midsummer/month)](https://pepy.tech/project/midsummer)
 [![versions](https://img.shields.io/pypi/pyversions/pydantic.svg)](https://github.com/midsummer/midsummer)
 
 # Midsummer Date Calculator
