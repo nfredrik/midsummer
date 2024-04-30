@@ -1,3 +1,7 @@
+[![pypi](https://img.shields.io/pypi/v/midsummer.svg)](https://pypi.python.org/pypi/midsummer)
+[![downloads](https://static.pepy.tech/badge/pydantic/month)](https://pepy.tech/project/midsummer)
+[![versions](https://img.shields.io/pypi/pyversions/pydantic.svg)](https://github.com/midsummer/midsummer)
+
 # Midsummer Date Calculator
 
 This Python module calculates the date of Midsummer's Day for a given year. Midsummer's Day typically falls on a Friday between June 20th and June 26th.
