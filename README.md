@@ -18,7 +18,6 @@ To use this module, simply import the `midsummer_date` function and pass the yea
     print(midsummer_date(year))
 ```
 
-
 ## Functionality
 The midsummer_date function calculates the date of Midsummer’s Day for the specified year. If the calculated date does not fall on a Friday, a ValueError is raised.
 
