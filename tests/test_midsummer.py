@@ -13,9 +13,7 @@ def test_midsummer_date():
         assert midsummer_date(year=2018) == datetime(2018, 6, 22)
 
         assert midsummer_date(year=2024) == datetime(2024, 6, 21)
-        assert_that(midsummer_date(year=2024)).is_equal_to(
-            datetime(2024, 6, 21)
-        )
+        assert_that(midsummer_date(year=2024)).is_equal_to(datetime(2024, 6, 21))
 
 
 def test_midsummer_date__invalid_type():

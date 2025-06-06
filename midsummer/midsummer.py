@@ -3,8 +3,7 @@ from datetime import datetime, timedelta
 from typing import Final
 
 
-class MidsummerException(Exception):
-    ...
+class MidsummerException(Exception): ...
 
 
 FIRST_POSSIBLE_DAY: Final = 20
@@ -37,9 +36,7 @@ def midsummer_date(year: int) -> datetime:
     except ValueError:
         raise MidsummerException("Invalid value need to be positive integer")
 
-    my_list = [
-        start + timedelta(days=x) for x in range(DAYS_IN_A_WEEK_ZERO_CNT)
-    ]
+    my_list = [start + timedelta(days=x) for x in range(DAYS_IN_A_WEEK_ZERO_CNT)]
     return next(item for item in my_list if item.weekday() == calendar.FRIDAY)
 
     raise MidsummerException("Error, this could not happen!")
